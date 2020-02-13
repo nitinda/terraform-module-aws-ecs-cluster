@@ -11,14 +11,14 @@ variable "capacity_providers" {
 
 variable "default_capacity_provider_strategy" {
   description = "The capacity provider strategy to use by default for the cluster"
-  type        = list(string)
+  type        = any
   default     = []
 }
 
 variable "setting" {
   description = " Configuration block(s) with cluster settings"
   default     = []
-  type        = list(string)
+  type        = any
 }
 
 ## Tags

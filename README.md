@@ -92,11 +92,11 @@ _The variables required in order for the module to be successfully called from t
 
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
 |:----|:----|-----:|:---:|
-| **_tags_** | _Resource tags_ | _map_ | **_Required_** |
+| **_tags_** | _Resource tags_ | _map(string)_ | **_Required_** |
 | **_name_** | _The name of the cluster_ | _string_ | **_Required_** |
-| **_capacity\_providers_** | _List of short names of one or more capacity providers to associate with the cluster_ | _string_ | **_Optional_** |
-| **_default\_capacity\_provider\_strategy_** | _The capacity provider strategy to use by default for the cluster_ | _list of maps_ | **_Optional_** |
-| **_setting_** | _Configuration block(s) with cluster settings._ | _list of maps_ | **_Optional_** |
+| **_capacity\_providers_** | _List of short names of one or more capacity providers to associate with the cluster_ | _list(string)_ | **_Optional_** |
+| **_default\_capacity\_provider\_strategy_** | _The capacity provider strategy to use by default for the cluster_ | _any_ | **_Optional_** |
+| **_setting_** | _Configuration block(s) with cluster settings._ | _any_ | **_Optional_** |
 
 
 ---
