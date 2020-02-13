@@ -5,8 +5,7 @@ variable "name" {
 
 variable "capacity_providers" {
   description = "List of short names of one or more capacity providers to associate with the cluster"
-  type        = "map"
-  default     = {}
+  default     = ""
 }
 
 variable "default_capacity_provider_strategy" {
