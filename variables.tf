@@ -1,4 +1,4 @@
-## ECS Task Definition
+## ECS Cluster
 variable "name" {
   description = "The name of the cluster."
 }
@@ -24,5 +24,5 @@ variable "setting" {
 ## Tags
 variable "tags" {
   description = "Resources Tags"
-  type        = map(string)
+  type        = "map"
 }
