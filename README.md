@@ -108,9 +108,8 @@ _The variables required in order for the module to be successfully called from t
 
 _This module has the following outputs:_
 
+* **_id_**
 * **_arn_**
-* **_family_**
-* **_revision_**
 
 
 ### _Usage_
