@@ -31,7 +31,11 @@ _Below we are able to check the resources that are being created as part of this
 
 ## _Using this repo_
 
+
 _To use this module, add the following call to your code:_
+
+
+* **_Example without optional variables_**
 
 ```tf
 module "ecs_cluster" {
@@ -41,9 +45,44 @@ module "ecs_cluster" {
     aws = "aws.services"
   }
 
+  name = "ecs-cluster"
+
+  # Tags
+  tags = {
+      Project      = "POC"
+      Environment  = "prod"
+  }
 }
 ```
 
+
+* **_Example with optional variables_**
+
+```tf
+module "ecs_cluster" {
+  source = "git::https://github.com/nitinda/terraform-module-aws-ecs-cluster.git?ref=terraform-11/master"
+
+  providers = {
+    aws = "aws.services"
+  }
+
+  name                               = "ecs-cluster"
+  capacity_providers                 = []              ## Valid values also include FARGATE and FARGATE_SPOT
+  default_capacity_provider_strategy = []
+  setting                            = [
+     {
+       name  = "containerInsights"
+       value = "disabled"
+     }
+  ]
+
+  # Tags
+  tags = {
+      Project      = "POC"
+      Environment  = "prod"
+  }
+}
+```
 
 ---
 
