@@ -54,16 +54,10 @@ _The variables required in order for the module to be successfully called from t
 |**_Variable_** | **_Description_** | **_Type_** | **_Argument Status_** |
 |:----|:----|-----:|:---:|
 | **_tags_** | _Resource tags_ | _map_ | **_Required_** |
-| **_family_** | _A unique name_ | _string_ | **_Required_** |
-| **_container\_definitions_** | _A list of valid container definitions_ | _string_ | **_Required_** |
-| **_task\_role\_arn_** | _The ARN of IAM role for container task_ | _string_ | **_Optional_** |
-| **_execution\_role\_arn_** | _The Amazon Resource Name_ | _string_ | **_Optional_** |
-| **_network\_mode_** | _The Docker networking mode_ | _string_ | **_Optional_** |
-| **_volume_** | _A set of volume blocks_ | _list of maps_ | **_Optional_** |
-| **_placement\_constraints_** | _A set of placement constraints rules_ | _list of maps_ |  **_Optional_** |
-| **_cpu_** | _The number of cpu units_ | _string_ | **_Required_** |
-| **_memory_** | _The amount (in MiB) of memory_ | _string_ | **_Required_** |
-| **_requires\_compatibilities_** | _A set of launch types_ | _string_ | **_Required_** |
+| **_name_** | _The name of the cluster_ | _string_ | **_Required_** |
+| **_capacity\_providers_** | _List of short names of one or more capacity providers to associate with the cluster_ | _string_ | **_Optional_** |
+| **_default\_capacity\_provider\_strategy_** | _The capacity provider strategy to use by default for the cluster_ | _string_ | **_Optional_** |
+| **_setting_** | _Configuration block(s) with cluster settings._ | _string_ | **_Optional_** |
 
 
 ---
