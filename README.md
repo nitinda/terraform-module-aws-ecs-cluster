@@ -1,5 +1,16 @@
 # _Terraform Module: terraform-module-aws-ecs-cluster_
 
+<!--BEGIN STABILITY BANNER-->
+---
+
+![_Stability: Stable_](https://img.shields.io/badge/stability-Stable-success.svg?style=for-the-badge)
+
+> **_This is a stable example. It should successfully build out of the box_**
+>
+> _This examples does is built on Construct Libraries marked "Stable" and does not have any infrastructure prerequisites to build._
+
+---
+<!--END STABILITY BANNER-->
 
 ## _General_
 
